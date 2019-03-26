@@ -69,7 +69,7 @@ function transformEssentialsInText(text) {
 }
 
 function isDiphtong(letter, previousLetter) {
-  const tengwarDiphtong = /[dklrt]h|[mns]{2}|ng/i;
+  const tengwarDiphtong = /[dklrt]h|m{2}|n{2}|s{2}|ng/i;
 
   return tengwarDiphtong.test(previousLetter + letter);
 }
